@@ -1,20 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
 
-<VBox alignment="CENTER" prefHeight="403.0" prefWidth="466.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javafx.HelloController">
-  <padding>
-    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-  </padding>
-  <Button onAction="#onHelloButtonClick" text="Hello!" />
-
-  <Label fx:id="welcomeText" />
-   <PointLight color="CHARTREUSE" lightOn="true" />
-   <CheckBox mnemonicParsing="false" text="CheckBox1" />
-   <CheckBox mnemonicParsing="false" onAction="#onHelloButtonClick" text="CheckBox2" />
-   <ParallelCamera />
-   <ParallelCamera />
-</VBox>
+<AnchorPane prefHeight="324.0" prefWidth="553.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ChoiceBox layoutX="294.0" layoutY="34.0" prefHeight="73.0" prefWidth="218.0" AnchorPane.bottomAnchor="217.0" AnchorPane.rightAnchor="41.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></ChoiceBox>
+      <ButtonBar layoutX="294.0" layoutY="51.0" prefHeight="40.0" prefWidth="200.0" AnchorPane.bottomAnchor="233.0" AnchorPane.leftAnchor="294.0" AnchorPane.rightAnchor="59.0" AnchorPane.topAnchor="51.0">
+         <buttons>
+          <Button mnemonicParsing="false" text="Button" />
+            <Label text="Label" />
+         </buttons>
+      </ButtonBar>
+      <Pane layoutX="46.0" layoutY="82.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Circle layoutX="10.0" layoutY="100.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+            <Sphere layoutX="121.0" layoutY="116.0" radius="50" />
+            <Polygon fill="DODGERBLUE" layoutX="64.0" layoutY="150.0" points="-50.0, 40.0, 46.0, 40.0, 0.0, -60.0" stroke="BLACK" strokeType="INSIDE" />
+         </children></Pane>
+      <TilePane layoutX="303.0" layoutY="107.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <TreeTableView prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                <TreeTableColumn prefWidth="75.0" text="C1" />
+                <TreeTableColumn prefWidth="75.0" text="C2" />
+              </columns>
+            </TreeTableView>
+         </children>
+      </TilePane>
+      <RadioButton layoutX="61.0" layoutY="43.0" mnemonicParsing="false" text="RadioButton" />
+      <SplitMenuButton layoutX="68.0" layoutY="71.0" mnemonicParsing="false" text="SplitMenuButton">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </SplitMenuButton>
+   </children>
+</AnchorPane>
