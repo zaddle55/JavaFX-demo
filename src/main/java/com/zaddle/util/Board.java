@@ -78,6 +78,7 @@ public class Board {
                 return WHITE;
             }
         }
+        return EMPTY;
     }
     /*
     *判断当前列内是否有五子相连
@@ -108,6 +109,93 @@ public class Board {
             return true;
         }
         else{
+            return false;
+        }
+    }
+    /*
+    *判断当前行内是否有五子相连
+    * @param x 当前横坐标
+    * @param y 当前纵坐标
+    * @return boolean
+     */
+    public static boolean judgeRow(int x, int y) {
+        int count = 1;
+        int color = board[x][y];
+        for (int i = y - 1; i >= 0; i--) {
+            if (board[x][i] == color) {
+                count++;
+            } else {
+                break;
+            }
+        }
+        for (int i = y + 1; i < 15; i++) {
+            if (board[x][i] == color) {
+                count++;
+            } else {
+                break;
+            }
+        }
+        if (count >= INROW) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+        /*
+        *判断当前左斜对角线内是否有五子相连
+        * @param x 当前横坐标
+        * @param y 当前纵坐标
+        * @return boolean
+         */
+        public static  boolean judgeLeftDiagonal(int x, int y) {
+            int count = 1;
+            int color = board[x][y];
+            for (int i = x - 1, j = y - 1; i >= 0 && j >= 0; i--, j--) {
+                if (board[i][j] == color) {
+                    count++;
+                } else {
+                    break;
+                }
+            }
+            for (int i = x + 1, j = y + 1; i < 15 && j < 15; i++, j++) {
+                if (board[i][j] == color) {
+                    count++;
+                } else {
+                    break;
+                }
+            }
+            if (count >= INROW) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        /*
+        *判断当前右斜对角线内是否有五子相连
+        * @param x 当前横坐标
+        * @param y 当前纵坐标
+        * @return boolean
+         */
+    public static  boolean judgeRightDiagonal(int x, int y) {
+        int count = 1;
+        int color = board[x][y];
+        for (int i = x - 1, j = y + 1; i >= 0 && j < 15; i--, j++) {
+            if (board[i][j] == color) {
+                count++;
+            } else {
+                break;
+            }
+        }
+        for (int i = x + 1, j = y - 1; i < 15 && j >= 0; i++, j--) {
+            if (board[i][j] == color) {
+                count++;
+            } else {
+                break;
+            }
+        }
+        if (count >= INROW) {
+            return true;
+        } else {
             return false;
         }
     }
