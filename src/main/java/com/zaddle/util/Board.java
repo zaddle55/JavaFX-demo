@@ -22,8 +22,8 @@ public class Board {
     // 设置黑棋为1，白棋为2，空为0
     public static final int BLACK = 1;
     public static final int WHITE = 2;
-    public  static final int EMPTY = 0;
-    public  static final int INROW = 5;
+    public static final int EMPTY = 0;
+    public static final int INROW = 5;
     // 设置棋盘
     public static  int[][] board = new int[15][15];
     // 初始化棋盘
@@ -147,7 +147,7 @@ public class Board {
         * @param y 当前纵坐标
         * @return boolean
          */
-        public static  boolean judgeLeftDiagonal(int x, int y) {
+        public static boolean judgeLeftDiagonal(int x, int y) {
             int count = 1;
             int color = board[x][y];
             for (int i = x - 1, j = y - 1; i >= 0 && j >= 0; i--, j--) {
