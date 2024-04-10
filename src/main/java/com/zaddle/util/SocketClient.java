@@ -3,11 +3,11 @@ package com.zaddle.util;
 import java.io.IOException;
 import java.net.Socket;
 import java.util.concurrent.Executors;
+import java.util.concurrent.ExecutorService;
 
 public class SocketClient extends SocketBase {
     /**
      * Socket client class
-     * 
      * @param address
      * @param port
      */
@@ -18,11 +18,11 @@ public class SocketClient extends SocketBase {
         this.address = address;
         this.port = port;
     }
-    /**
+    /*
      * 连接服务器
      */
     public void connect() {
-        var executor = Executors.newSingleThreadExecutor();
+        var exec = Executors.newSingleThreadExecutor();
         exec.submit(() -> {
             try {
                 handleConnect(new Socket(address, port));
@@ -31,5 +31,17 @@ public class SocketClient extends SocketBase {
             }
             exec.shutdown();
         });
+    }
+    /*
+     * 断开连接
+     */
+    public void disconnect() {
+        if (conn != null) {
+            try {
+                conn.close();
+            } catch (IOException e) {
+                handleError(e);
+            }
+        }
     }
 }

@@ -9,8 +9,8 @@ import java.util.function.Consumer;
 
 public abstract class SocketBase {
     protected Consumer<Socket> connectCallback = socket -> {}; // 连接回调
-    protected Consumer<Socket> receiveCallback = socket -> {}; // 接收回调
-    protected Consumer<Socket> errorCallback = e -> {}; // 错误回调
+    protected Consumer<String> receiveCallback = socket -> {}; // 接收回调
+    protected Consumer<IOException> errorCallback = e -> {}; // 错误回调
     Socket conn; // 连接对象
     /*
      * 连接服务器
@@ -25,9 +25,9 @@ public abstract class SocketBase {
         receiveCallback = listener;
     }
     /*
-     * 发送消息
+     * 错误处理
      */
-    public void addErrorListener(Consumer<Socket> listener) {
+    public void addErrorListener(Consumer<IOException> listener) {
         errorCallback = listener;
     }
     /*

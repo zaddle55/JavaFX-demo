@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3594430e-3387-4c29-b154-e451ebcdc95c" name="更改" comment="update">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javafx/Main.java" afterDir="false" />
+    <list default="true" id="3594430e-3387-4c29-b154-e451ebcdc95c" name="更改" comment="construct a raw logic and add a demo to run">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zaddle/util/TestMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zaddle/util/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zaddle/util/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zaddle/util/SocketBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zaddle/util/SocketBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zaddle/util/SocketClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zaddle/util/SocketClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zaddle/util/SocketServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zaddle/util/SocketServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/javafx/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/javafx/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +56,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -63,35 +67,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "dev",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Administrator/Documents/Code/Gobang-Demo/GoBang",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true",
-    "应用程序.HelloApplication.executor": "Run",
-    "应用程序.Main.executor": "Run"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Administrator/Documents/Code/Gobang-Demo/GoBang&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;应用程序.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.Main.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.TestMain.executor&quot;: &quot;Run&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org.example.javafx" />
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.Main">
+  <component name="RunManager" selected="应用程序.TestMain">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.javafx.HelloApplication" />
       <module name="javafx" />
@@ -112,8 +117,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zaddle.util.TestMain" />
+      <module name="javafx" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zaddle.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.TestMain" />
         <item itemvalue="应用程序.Main" />
         <item itemvalue="应用程序.HelloApplication" />
       </list>
@@ -140,7 +159,16 @@
       <workItem from="1710984880238" duration="22869000" />
       <workItem from="1711124927354" duration="1274000" />
       <workItem from="1711168209031" duration="2293000" />
-      <workItem from="1711364769450" duration="4979000" />
+      <workItem from="1711364769450" duration="5203000" />
+      <workItem from="1711984107633" duration="100000" />
+      <workItem from="1712057267684" duration="3305000" />
+      <workItem from="1712075904655" duration="378000" />
+      <workItem from="1712076296915" duration="54000" />
+      <workItem from="1712076358098" duration="181000" />
+      <workItem from="1712470753957" duration="612000" />
+      <workItem from="1712544830434" duration="644000" />
+      <workItem from="1712571226411" duration="5198000" />
+      <workItem from="1712672762259" duration="615000" />
     </task>
     <task id="LOCAL-00001" summary="create javafx-maven project">
       <option name="closed" value="true" />
@@ -190,7 +218,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711364792230</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="construct a raw logic and add a demo to run">
+      <option name="closed" value="true" />
+      <created>1711381189122</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1711381189122</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,7 +258,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create javafx-maven project" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="construct a raw logic and add a demo to run" />
+    <option name="LAST_COMMIT_MESSAGE" value="construct a raw logic and add a demo to run" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -238,5 +275,9 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
