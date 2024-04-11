@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3594430e-3387-4c29-b154-e451ebcdc95c" name="更改" comment="construct a raw logic and add a demo to run">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zaddle/util/TestMain.java" afterDir="false" />
+    <list default="true" id="3594430e-3387-4c29-b154-e451ebcdc95c" name="更改" comment="Socket modification">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zaddle/socket/SocketClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zaddle/socket/SocketServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zaddle/util/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zaddle/util/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zaddle/util/SocketBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zaddle/util/SocketBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zaddle/util/SocketClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zaddle/util/SocketClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zaddle/util/SocketServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zaddle/util/SocketServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/javafx/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/javafx/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +82,9 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
     &quot;应用程序.HelloApplication.executor&quot;: &quot;Run&quot;,
     &quot;应用程序.Main.executor&quot;: &quot;Run&quot;,
-    &quot;应用程序.TestMain.executor&quot;: &quot;Run&quot;
+    &quot;应用程序.TestMain (1).executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.TestMain.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.com.zaddle.TestMain.executor&quot;: &quot;Debug&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -96,7 +93,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.TestMain">
+  <component name="RunManager" selected="应用程序.com.zaddle.TestMain">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.javafx.HelloApplication" />
       <module name="javafx" />
@@ -130,8 +127,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.zaddle.TestMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zaddle.TestMain" />
+      <module name="javafx" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.com.zaddle.TestMain" />
         <item itemvalue="应用程序.TestMain" />
         <item itemvalue="应用程序.Main" />
         <item itemvalue="应用程序.HelloApplication" />
@@ -169,6 +174,9 @@
       <workItem from="1712544830434" duration="644000" />
       <workItem from="1712571226411" duration="5198000" />
       <workItem from="1712672762259" duration="615000" />
+      <workItem from="1712711789088" duration="640000" />
+      <workItem from="1712752877304" duration="11965000" />
+      <workItem from="1712829485736" duration="413000" />
     </task>
     <task id="LOCAL-00001" summary="create javafx-maven project">
       <option name="closed" value="true" />
@@ -226,7 +234,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711381189122</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="construct a raw logic and add a demo to run">
+      <option name="closed" value="true" />
+      <created>1712711841101</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1712711841101</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
